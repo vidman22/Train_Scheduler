@@ -72,7 +72,7 @@ var config = {
     // Time apart (remainder)
 
 
-    var tRemainder = diffTime % trainFreq;
+    var tRemainder = Math.abs(diffTime) % trainFreq;
     console.log(tRemainder);
     // Minute Until Train
     var tMinutesTillTrain = trainFreq - tRemainder;
